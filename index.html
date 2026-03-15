@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Work Anniversary</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="overflow-y-auto min-h-screen bg-gradient-to-br from-pink-200 via-pink-300 to-fuchsia-400 font-[Poppins]">
+
+  <nav id="nav-header" class="hidden fixed top-0 left-0 w-full z-50 p-6 flex justify-end">
+    <button onclick="goBack()" 
+      class="bg-white/10 backdrop-blur-md text-white border border-white/20 hover:bg-white/20 px-6 py-2 rounded-full font-medium transition-all duration-300 flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+      </svg>
+      Back
+    </button>
+  </nav>
+
+  <div class="pointer-events-none fixed inset-0 overflow-hidden">
+    <div class="balloon bg-pink-300 opacity-60 left-[10%]"></div>
+    <div class="balloon bg-pink-400 opacity-50 left-[30%]" style="animation-delay:2s"></div>
+    <div class="balloon bg-fuchsia-400 opacity-60 left-[50%]" style="animation-delay:4s"></div>
+    <div class="balloon bg-pink-200 opacity-50 left-[70%]" style="animation-delay:1s"></div>
+    <div class="balloon bg-fuchsia-500 opacity-60 left-[85%]" style="animation-delay:3s"></div>
+  </div>
+
+  <section id="landing" class="relative z-10 min-h-screen flex items-center justify-center text-center px-6">
+    <div class="max-w-5xl text-white fade-in">
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-6">
+        Happy 1st Work Anniversary,<br>
+        Ms. Perrine D. Padilla
+      </h1>
+      <p class="text-lg md:text-xl text-pink-100 mb-10">
+        A celebration of dedication, passion, and excellence at work.
+      </p>
+
+      <button onclick="revealCelebrants()"
+        class="bg-pink-400 text-white hover:bg-pink-300 px-10 py-4 rounded-full font-semibold text-lg shadow-[0_0_20px_rgba(236,72,153,0.5)] transition-all duration-300 hover:scale-110">
+        Celebrate with her
+      </button>
+    </div>
+  </section>
+
+  <section id="celebrants" class="hidden relative z-10 px-6 py-16">
+    <div class="max-w-4xl mx-auto fade-in">
+      <div class="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl p-12 md:p-16 text-center flex flex-col w-full border border-pink-200">
+        <div class="flex justify-center mb-6">
+          <img src="DC1.png"
+            class="w-56 h-56 md:w-72 md:h-72 rounded-full object-cover
+                   shadow-[0_15px_40px_rgba(236,72,153,0.3)]
+                   ring-[8px] ring-pink-400 transition-transform duration-500 hover:scale-105"
+            alt="">
+        </div>
+
+        <h2 class="text-3xl md:text-4xl font-bold text-fuchsia-600 mb-2">
+          Ms. Perrine D. Padilla
+        </h2>
+
+        <p class="text-lg font-medium text-pink-500 mb-4">
+          Celebrating her <span class="font-bold text-fuchsia-600">1st work anniversary</span>
+        </p>
+
+        <p class="text-gray-700 leading-relaxed">
+          Your kindness, good leadership, and commitment to excellence continue to inspire the entire team. 
+          Thank you for guiding us with integrity and purpose every single day.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="appreciation-cla" class="hidden relative z-10 px-6 py-16">
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl p-12 md:p-16 text-justify w-full border border-pink-200">
+        <h3 class="text-3xl md:text-5xl font-bold text-fuchsia-600 mb-8 text-center">
+          Happy 1st Work Anniversary, Ms Perrine!
+        </h3>
+
+        <div class="text-gray-700 leading-relaxed text-lg md:text-xl space-y-4">
+          <p>Today, we celebrate not only your 23 years of dedicated service but also the kind of leadership that truly transforms lives. 
+            You constantly inspire us to become the best version of ourselves - you see our potential even before we do, you trust us with responsibility, 
+            and you empower us to grow with confidence.</p>
+          <p>More than a leader, you are a mentor and a steady source of encouragement. You pray for us, support us, and stand with us — in milestones, 
+            in challenges, and even in the simple, joyful moments. You never hesitate to join our activities, to laugh with us, and to remind us that work 
+            can be both meaningful and joyful.</p>
+          <p>What makes you exceptional is not only your competence and professionalism, but your genuine love for your team. You lead with heart, with faith, 
+            and with unwavering belief in each of us. Because of you, we strive to do better, to serve better, and to become better.</p>
+          <p>We are truly blessed to have a boss who leads with excellence, humility, and joy. Thank you for being the kind of leader many aspire to be — and the 
+            kind of person we deeply respect and appreciate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="floating-images" class="hidden relative z-10 h-[120vh] overflow-hidden">
+    <h2 class="absolute inset-0 flex justify-center items-center text-4xl md:text-6xl font-bold text-white drop-shadow-2xl text-center pointer-events-none max-w-4xl mx-auto px-4">
+      Happy 1st Work Anniversary, Ms. Perrine!
+    </h2>
+  </section>
+
+  <audio id="bg-music" src="Celeb.mp3" loop></audio>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
