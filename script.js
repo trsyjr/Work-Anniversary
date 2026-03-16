@@ -61,7 +61,7 @@ function spawnBalloons(quantity = 5) {
   const containerWidth = container.offsetWidth;
   const containerHeight = container.offsetHeight;
   // Ensure "Assets" matches your folder name exactly (Case Sensitive!)
-  const images = ["23.png", "Blue.png", "Blueblue.png"];
+  const images = ["Assets/B1.png", "Assets/B2.png", "Assets/B3.png"];
 
   for (let i = 0; i < quantity; i++) {
     const balloon = document.createElement("img");
@@ -90,10 +90,10 @@ function spawnBalloons(quantity = 5) {
   }
 }
 
-const claImages = [
-  "DC1.png", "DC2.png", "DC3.png", "DC4.png",
-  "DC5.png", "DC6.png", "DC7.png", "DC8.png",
-  "DC10.png", "DC11.png"
+const photos = [
+  "Assets/P1.JPG", "Assets/P2.JPG", "Assets/P3.jpeg", "Assets/P4.jpeg",
+  "Assets/P5.jpg", "Assets/P6.jpg", "Assets/P9.jpeg", "Assets/P10.JPG",
+  "Assets/P11.jpeg", "Assets/P12.jpg", "Assets/P13.jpg"
 ];
 
 function shuffleArray(array) {
@@ -110,7 +110,7 @@ function showFloatingImagesTurn() {
   if (container.classList.contains('hidden')) return;
 
   const containerWidth = container.offsetWidth;
-  const images = shuffleArray(claImages);
+  const images = shuffleArray(photos);
   let index = 0;
 
   function spawnNextImage() {
