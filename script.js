@@ -61,7 +61,8 @@ function spawnBalloons(quantity = 5) {
   const containerWidth = container.offsetWidth;
   const containerHeight = container.offsetHeight;
   // Ensure "Assets" matches your folder name exactly (Case Sensitive!)
-  const images = ["Assets/B1.png", "Assets/B2.png", "Assets/B3.png"];
+  const images = ["Assets/B1.png", "Assets/B2.png", "Assets/B3.png",
+    "Assets/K1.gif", "Assets/K2.gif", "Assets/K3.gif", "Assets/K4.gif", "Assets/K5.gif"];
 
   for (let i = 0; i < quantity; i++) {
     const balloon = document.createElement("img");
